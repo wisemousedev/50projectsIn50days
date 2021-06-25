@@ -1,15 +1,30 @@
-@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Muli", sans-serif;
+body h1 {
+  font-family: "Kirang Haerang", cursive;
+  font-size: 56px;
+  text-align: center;
+  margin: 0;
+  background: -webkit-linear-gradient(
+    rgb(41, 7, 7),
+    rgb(248, 138, 138)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: none;
+}
+
+.imgArea {
+  font-family: "Permanent Marker", cursive;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
   margin: 0;
 }
@@ -20,12 +35,11 @@ body {
 }
 
 .panel {
-  background-size: auto 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 80vh;
   border-radius: 50px;
-  color: aliceblue;
   cursor: pointer;
   flex: 0.5;
   margin: 10px;
@@ -34,12 +48,19 @@ body {
 }
 
 .panel h3 {
-  font-size: 24px;
+  font-size: 34px;
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 40px;
+  left: 60px;
   margin: 0;
   opacity: 0;
+  background: -webkit-linear-gradient(
+    rgb(253, 253, 253),
+    rgb(248, 138, 138)
+  );
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
 }
 
 .panel.active {
